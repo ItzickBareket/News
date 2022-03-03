@@ -1,0 +1,11 @@
+[
+  {"name": "Business, Finance & Economics","imageResourceId": "business_category_image"},
+
+  {"name": "Computers, Science & Technology","imageResourceId": "computers_category_image"},
+
+  {"name": "Entertainment, Art & Culture","imageResourceId": "entertainment_category_image"},
+
+  {"name": "General News & Current Affairs","imageResourceId": "current_affairs_category_image"},
+
+  {"name": "Health & Medicine","imageResourceId": "health_category_image"}
+]

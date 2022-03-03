@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    app:cardBackgroundColor="@color/teal_700"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/general"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2sp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/ivFavoriteImage"
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivCancelFavoriteBackground"
+            android:layout_margin="16sp"
+            android:background="@drawable/white_circle"
+            app:layout_constraintBottom_toBottomOf="@id/ivFavoriteImage"
+            app:layout_constraintEnd_toEndOf="@id/ivFavoriteImage"
+            android:layout_width="32sp"
+            android:layout_height="32sp"/>
+
+        <ImageView
+            android:id="@+id/ivCancelFavorite"
+            android:layout_margin="16sp"
+            android:background="@drawable/favorite_full"
+            app:layout_constraintBottom_toBottomOf="@id/ivCancelFavoriteBackground"
+            app:layout_constraintEnd_toEndOf="@id/ivCancelFavoriteBackground"
+            app:layout_constraintTop_toTopOf="@+id/ivCancelFavoriteBackground"
+            app:layout_constraintStart_toStartOf="@+id/ivCancelFavoriteBackground"
+            android:layout_width="20sp"
+            android:layout_height="20sp"/>
+
+
+
+        <TextView
+            android:id="@+id/tvFavoriteTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:text="Favorite Title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivFavoriteImage" />
+
+        <TextView
+            android:id="@+id/tvFavoriteDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="12sp"
+            android:text="Favorite Description"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFavoriteTitle"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
